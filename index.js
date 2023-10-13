@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json()); // parse json bodies in the request object
 
 // Redirect requests to endpoint starting with /posts to postRoutes.js
-app.use("/post", require("./routes/postRoutes"));
+app.use("/p2p", require("./routes/postRoutes"));
 
 // Global Error Handler. IMPORTANT function params MUST start with err
 app.use((err, req, res, next) => {
